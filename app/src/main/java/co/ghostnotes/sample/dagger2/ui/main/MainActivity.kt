@@ -8,7 +8,7 @@ import co.ghostnotes.sample.dagger2.util.TextHelper
 import dagger.android.support.DaggerAppCompatActivity
 import javax.inject.Inject
 
-class MainActivity : DaggerAppCompatActivity(), MainContract.View {
+class MainActivity : DaggerAppCompatActivity() {
 
     @Inject
     lateinit var textHelper: TextHelper

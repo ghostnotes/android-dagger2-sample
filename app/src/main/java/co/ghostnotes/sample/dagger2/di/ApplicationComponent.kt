@@ -14,14 +14,14 @@ import javax.inject.Singleton
     ActivityBindingModule::class,
     AndroidSupportInjectionModule::class
 ])
-interface AppComponent: AndroidInjector<Dagger2SampleApplication> {
+interface ApplicationComponent: AndroidInjector<Dagger2SampleApplication> {
 
     @Component.Builder
     interface Builder {
         @BindsInstance
         fun application(application: Application): Builder
 
-        fun build(): AppComponent
+        fun build(): ApplicationComponent
     }
 
 }
